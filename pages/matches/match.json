@@ -1,0 +1,9 @@
+{
+	"id": 0,
+	"name": ["俄罗斯", "沙特"],
+	"time": {"day": "6-14", "hour": "23:00"},
+	"score": [],
+	"group": "A",
+	"mostPopularPrediction": [2, 0],
+	"isEnd": false
+}

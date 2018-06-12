@@ -59,6 +59,81 @@ App({
   },
   globalData: {
     userInfo: null,
-    systemInfo: null
+    systemInfo: null,
+    currentMatch: null,
+    flags: {
+      "埃及": "1",
+      "乌拉圭": "2",
+      "沙特": "3",
+      "俄罗斯": "4",
+      "西班牙": "5",
+      "摩洛哥": "6",
+      "葡萄牙": "7",
+      "伊朗": "8",
+      "澳大利亚": "9",
+      "法国": "10",
+      "丹麦": "11",
+      "秘鲁": "12",
+      "冰岛": "13",
+      "阿根廷": "14",
+      "克罗地亚": "15",
+      "尼日利亚": "16",
+      "塞尔维亚": "17",
+      "巴西": "18",
+      "瑞士": "19",
+      "哥斯达黎加": "20",
+      "韩国": "21",
+      "德国": "22",
+      "瑞典":"23",
+      "墨西哥": "24",
+      "比利时": "25",
+      "英格兰": "26",
+      "巴拿马": "27",
+      "突尼斯": "28",
+      "塞内加尔": "29",
+      "波兰": "30",
+      "哥伦比亚": "31",
+      "日本": "32"
+    },
+    userData: {
+      userId: '',
+      userName: '笑点在哪里',
+      predictionCounts: 0,
+      correctScoreCounts: 0,
+      correctVictoryCounts: 0,
+      beatUsers: '100%',
+      matches: [
+        {
+          "id": 0,
+          "name": ["俄罗斯", "沙特"],
+          "time": {"day": "6-14", "hour": "23:00"},
+          "score": [],
+          "haveDone": 1,
+          "group": "A",
+          "mostPopularPrediction": [2, 0],
+          "userPrediction": [2, 0]
+        },
+        {
+          "id": 1,
+          "name": ["埃及", "哥斯达黎加"],
+          "time": {"day": "6-15", "hour": "20:00"},
+          "score": [1, 2],
+          "haveDone": 2,
+          "group": "A",
+          "mostPopularPrediction": [1, 2],
+          "userPrediction": []
+        },
+        {
+          "id": 2,
+          "name": ["摩洛哥", "伊朗"],
+          "time": {"day": "6-15", "hour": "23:00"},
+          "score": [],
+          "haveDone": 0,
+          "group": "A",
+          "mostPopularPrediction": [2, 0],
+          "userPrediction": []
+        }
+      ]
+    }
   }
 })

@@ -100,10 +100,14 @@ Page({
   },
   //跳转
   navigateToAvatar: function (e) {
-    wx.navigateTo({
+    console.log("一脚世界波")
+    wx.switchTab({
       url: '../avatar/avatar',
       success: () => {
         console.log('跳转成功！')
+        this.setData({
+          footballClass: 'football-vibrate'
+        })
       }
     })
   }

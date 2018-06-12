@@ -186,14 +186,17 @@ Page({
       //下载成功渲染页面
       success: res => {
         console.log(res),
+        //让动画多播一段时间
+        setTimeout(() => {
           //清除interval
           clearInterval(interval)
-        //设置变量，页面内容更新
-        this.setData({
-          userInfo: app.globalData.userInfo,
-          avatarPath: res.tempFilePath,
-          isReady: true
-        })
+          //设置变量，页面内容更新
+          this.setData({
+            userInfo: app.globalData.userInfo,
+            avatarPath: res.tempFilePath,
+            isReady: true
+          })
+        }, 1500)
         //绘制用户头像
         //this.drawCanvas()
       }
@@ -441,11 +444,11 @@ Page({
     var context = wx.createCanvasContext('loadCanvas')
     this.drawCircle(0, context)
     var i = 0 //闭包
-    var v = 0.1 * Math.PI
+    var v = 0.2 * Math.PI
     interval = setInterval(() => {
       i++
       this.drawCircle(v * i, context)
-    }, 500)
+    }, 200)
   },
 
   touchStart: function (e) {

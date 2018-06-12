@@ -1,0 +1,22 @@
+{
+	"userId": "",
+    "userName": "笑点在哪里",
+    "predictionCounts": 0,
+    "correctScoreCounts": 0,
+    "correctVictoryCounts": 0,
+    "beatUsers": "100%",
+    "userPredictions": [
+        {
+          "matchId": 0,
+          "prediction": [2, 0]
+        },
+        {
+          "matchId": 0,
+          "prediction": [2, 0]
+        },
+        {
+          "matchId": 0,
+          "prediction": [2, 0]
+        }
+      ]
+}

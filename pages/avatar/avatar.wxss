@@ -46,30 +46,38 @@ html{
 .container {
   width: 100%;
   height: 100%;
-  /* background-repeat: no-repeat; */
-  background-size: 100%;
-  background-image: url("https://sklang.cloudms.cn/img/darkbluebg.png");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://sklang.cloudms.cn/img/darkbluebg.png"); 
+  overflow: hidden; 
 }
 .loadpage {
+  overflow: hidden;
   width: 100%;
-  margin-top: 30%;
+  height: 100%;
+  padding-top: 30%;
+  background-color: #0f4482;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://sklang.cloudms.cn/img/darkbluebg.png"); 
   color: white;
   font-size: 1.5em;
   text-align: center;
 }
 
 .loadAnimate{
-  width: 320rpx;
-  height: 160rpx;
+  width: 320px;
+  height: 160px;
 }
 
 .animateCup {
-  height: 100rpx;
-  margin-top: 30rpx;
+  height: 100px;
+  margin-top: 30px;
 }
 
 .loadText {
-  margin-top: 10rpx;
+  margin-top: 10px;
 }
 
 .first-point {
@@ -546,4 +554,14 @@ html{
   height: 100%;
   left: 0;
   top: 0;
+}
+
+/*设置隐藏block的margin-top为一个极大值，把父元素设置为overflow:hidden*/
+.hidden-view {
+  margin-top: 750rpx;
+}
+
+.drawing-canvas {
+  width: 500rpx; 
+  height: 500rpx;
 }
